@@ -73,7 +73,20 @@ export default function Home() {
           <button className="register-button">Create an account</button>
           </div>
       </div>
-      <div className="right-body"></div>
+
+      <div className="right-body">
+        <div className="right-content">
+          1
+        </div>
+        <div className="right-auther">
+          <div className="auther-name"></div>
+          <div className="stars"></div>
+        </div>
+        <div className="right-company">
+          <div className="company-name"></div>
+          <div className="arrows"></div>
+        </div>
+      </div>
     </main>
   );
 }
