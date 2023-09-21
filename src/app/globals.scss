@@ -28,11 +28,15 @@ body {
       gap: 24px;
       align-self: stretch;
 
+      .left_form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
       .login-item {
         display: flex;
         width: 240px;
       }
-
       .left-welcome-content {
         display: flex;
         width: 240px;
@@ -124,17 +128,86 @@ body {
       padding: 26px;
       flex-direction: column;
       justify-content: flex-end;
-      align-items: center;
       gap: 10px;
-
-      .right-content {
-        
+      .right-content-container {
+        .top-dec {
+          display: flex;
+          justify-content: space-between;
+          .right-content-dec {
+            position: relative;
+            top: 8px;
+          }
+        }
+        .bottom-dec {
+          display: flex;
+          justify-content: space-between;
+          .right-content-dec {
+            position: relative;
+            top: -8px;
+          }
+        }
+        .right-content-dec {
+          width: 8px;
+          height: 8px;
+          border: 1px solid #a2e93c;
+          background: #fff;
+        }
+        .right-content {
+          color: #fff;
+          font-family: Inter;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          border: 1px solid #a0eb3a;
+          padding: 4px;
+          margin: 4px;
+        }
       }
       .right-auther {
-
-      }
-      .right-company{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
+        .auther-name {
+          color: #fff;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .auther-stars {
+          display: flex;
+          width: 263.8px;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+
+      .company-slide {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .company-name {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          color: #fff;
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .slide-arrows {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 24px;
+        }
       }
     }
   }
